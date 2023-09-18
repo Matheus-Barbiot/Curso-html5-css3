@@ -1,0 +1,183 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Roboto';
+    src: url(/Desafios/des10/fontes/Roboto-Thin.ttf);
+}
+
+:root {
+    --azulEscuro: #141b41;
+    --azulMedio: #087e8b;
+    --azulClaro: #bfd7ea;
+    --verdeMedio: #23ce68;
+    --verdeClaro: #d7ffab;
+
+    --fontPadrão: Arial,  Verdana, Helvetica, sans-serif;
+    --fontAndroid: 'Android';
+    --fontRoboto: 'Roboto';
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--azulMedio);
+    font-family: var(--fontPadrão);
+}
+
+header {
+    background-image: linear-gradient(var(--azulEscuro), var(--azulMedio));
+    padding: 30px;
+}
+
+header > h1{
+    font-family: var(--fontRoboto);
+    font-size: 3.2em;
+    color: white;
+    text-shadow: 0px 9px 9px rgba(0, 0, 0, 0.377);
+}
+
+header > p {
+    text-align: right;
+    font-size: 1em;
+    color: rgba(227, 251, 255, 0.89);
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    text-shadow: 0px 9px 9px rgba(0, 0, 0, 0.377);
+    transition-duration: 200ms;
+}
+
+header > p:hover {
+    font-size: 1.05em;
+    transition-duration: 400ms;
+}
+
+nav > a{
+    font-family: var(--fontRoboto);
+    font-size: 1.4em;
+    text-decoration: None;
+    color: white;
+
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 0px 9px 9px rgba(0, 0, 0, 0.377);
+}
+
+nav > a:hover {
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 25px;
+    transition-duration: 500ms;
+}
+
+main {
+    padding: 5px;
+}
+
+main img {
+    width: 100%;
+}
+
+main > article {
+    background-color: white;
+    margin: auto;
+    padding: 3px;
+    border-radius: 25px;
+    max-width: 800px;
+    min-width: 320px;
+    box-shadow: 5px 5px 12px -1px rgba(50, 36, 82, 0.377);
+}
+
+h1 {
+    font-size: 2.3em;
+    font-family: var(--fontRoboto);
+}
+
+h2, h3 {
+    font-size: 1.8em;
+    font-family: var(--fontRoboto);
+    margin: 0px 0px 10px 0px
+}
+
+p {
+    text-align: justify;
+    padding: 15px 0px;
+    line-height: 1.8em;
+}
+
+p > a {
+    text-decoration: none;
+    color: var(--azulMedio);
+}
+p > a::after {
+    content: '¶';
+}
+
+aside {
+    background-color: var(--azulClaro);
+    border-radius: 25px;
+    margin-top: 10px;
+    padding: 30px;
+    margin: 10px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    padding: 10px;
+    border: solid white 2px;
+    border-radius: 25px;
+}
+
+footer {
+    background-image: linear-gradient(to top, var(--azulEscuro), var(--azulMedio));
+    color: white;
+    padding-top: 50px;
+}
+
+footer p {
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: var(--azulClaro);
+}
+
+div.assunto {
+    border: solid var(--azulClaro) 2px;
+    border-radius: 25px;
+    margin-top: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+#inicio {
+    padding: 25px;
+}
+
+.pequena {
+    width: 450px;
+    margin: auto;
+    display: block;
+}
+
+.bordaAtiva {
+    border-radius: 25px;
+    margin: 15px auto;
+    display: block;
+}
+
+div.video {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe {
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}

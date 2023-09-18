@@ -1,0 +1,14 @@
+/* estilo.css */
+body {
+    background-color: rgb(29, 29, 29);
+    font-family: Arial, Helvetica;
+    color: white;
+    text-align: center;
+  }
+
+  a {
+    color: rgba(228, 228, 228, 0.575);
+  }
+  
+  
+  

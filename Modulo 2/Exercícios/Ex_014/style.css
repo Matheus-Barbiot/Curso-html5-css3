@@ -1,0 +1,25 @@
+
+
+p {
+    font-style: oblique;
+    font-weight: lighter;
+}
+
+h1 {
+    font-size: 90px;
+    font-family: 'Cream Cake';
+}
+h2 {
+    font-size: 20px;
+}
+
+
+main {
+    background-color:#fffdfc;
+    color: #443742;
+    padding: 20px; /*LEVEL UP*/
+    border-radius: 0px 30px 30px; /*LEVEL UP*/ 
+    width: 500px;
+    margin: auto; /*LEVEL UP*/
+    box-shadow: 5px 5px 15px #443742; /*LEVEL UP*/
+}

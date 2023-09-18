@@ -1,0 +1,17 @@
+* {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+
+
+h1 {
+    text-align: center; /*LEVEL UP*/
+    font-size: 230%;
+    text-shadow:1px 1px 5px #4437426b; /*LEVEL UP*/
+}
+
+p {
+    text-align: justify; 
+    
+}
+

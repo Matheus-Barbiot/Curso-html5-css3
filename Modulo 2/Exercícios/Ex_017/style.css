@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: auto;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+div#sup {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    margin: 0px 0px 15px;
+    padding: 1px;
+    text-align: center;
+    font-weight: 300;
+}
+
+div.text, div.text2 {
+    background-color: rgb(216, 216, 255);
+    text-align: justify;
+    color: rgb(0, 0, 44);
+    
+    outline: 3px solid rgba(0, 0, 0, 0.144);
+    box-shadow: 5px 6px rgba(5, 11, 90, 0.39);
+    width: 400px;
+    padding: 1em 3em;
+    margin: 20px auto;
+    border-radius: 0px 10px 10px;
+}
+
+div.text2 {
+    background-color: rgb(250, 177, 177);
+    color: rgb(63, 0, 0);
+    border-radius: 10px 10px 0px;
+    box-shadow: 5px 6px rgba(90, 5, 5, 0.445);
+}
