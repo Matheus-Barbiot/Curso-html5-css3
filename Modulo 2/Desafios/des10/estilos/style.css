@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'Roboto';
-    src: url(/Desafios/des10/fontes/Roboto-Thin.ttf);
+    src: url(../fontes/Roboto-Thin.ttf);
 }
 
 :root {
