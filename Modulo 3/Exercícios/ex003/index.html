@@ -8,15 +8,25 @@
     <style> 
         table {
             width: 500px;
+            height: 200px;
             border-collapse: collapse;
         }
         td {
             padding: 8px 13px;
             border: 1px solid black;
+            transition-duration: 500ms;
+            text-align: center;
         }
 
         td:hover {
-            background-color: rgb(141, 141, 141);
+            background-color: rgba(141, 141, 141, 0.281);
+            padding: 16px 26px;
+            transition-duration: 500ms;
+        }
+
+        td.numero {
+            text-align: right;
+            vertical-align: sub;
         }
     </style>
 </head>
@@ -26,17 +36,17 @@
         <tr>
             <td>A1</td>
             <td>A2</td>
-            <td>A3</td>
+            <td class="numero">2.546244</td>
         </tr>
         <tr>
             <td>B1</td>
             <td>B2</td>
-            <td id="b3">B3</td>
+            <td class="numero">8.48764</td>
         </tr>
         <tr>
             <td>C1</td>
             <td>C2</td>
-            <td>C3</td>
+            <td class="numero">27.9837</td>
         </tr>
     </table>
 </body>
