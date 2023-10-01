@@ -29,6 +29,8 @@ body {
 
 header {
     background-image: linear-gradient(var(--azulEscuro), var(--azulMedio));
+    background-position: top center;
+    background-repeat: repeat-x;
     padding: 30px;
 }
 
