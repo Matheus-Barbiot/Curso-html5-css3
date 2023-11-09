@@ -1,0 +1,7 @@
+body {
+    background-image: url(images/cev-portrait.jpg);
+    background-color: #233eff;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
