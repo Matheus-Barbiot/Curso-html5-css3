@@ -1,0 +1,14 @@
+@media screen and (min-width: 500px) {
+    img#phone {display: none;}
+    img#tablet {display: block;}
+}
+
+@media print {
+    img#phone {display: none;}
+    img#print {display: block;}
+}
+
+@media screen and (min-width: 800px) {
+    img#phone {display: none;}
+    img#pc {display: block;}
+}
