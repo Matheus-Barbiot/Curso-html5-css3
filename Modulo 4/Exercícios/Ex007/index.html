@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo</h1>
+    <form action="cadastro.php" method="post">
+        <div>
+            <label for="n1">Primeiro Número:</label>
+            <input type="number" name="n1" id="in1"><br>
+
+            <label for="n2">Segundo Número:</label>
+            <input type="number" name="n2" id="in2" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </div>
+        <div>
+            <label for="isoma">Soma:</label>
+            <output id="isoma" name="soma">
+                0
+            </output>
+        </div>
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="apagar">
+        </div>
+    </form>
+
+    <form action="cadastro.php">
+        <div>
+            <label for="inivel">Nível: </label>
+            <input type="range" name="nivel" id="inivel" max="10" oninput="ifinal.innerHTML = inivel.value"> <br>
+            <label for="ifinal">Num:</label>
+            <output id="ifinal"></output>
+        </div>
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="apagar">
+        </div>
+    </form>
+
+    <form action="cadastro.php">
+        <div>
+            <input type="text" name="msg" id="imsg" oninput="itxt.innerText = 'Digitando'"> 
+            <input type="button" value="enviar msg" onclick="enviar()">
+            <br>
+            <output id="itxt">
+
+            </output>
+        </div>
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="apagar">
+        </div>
+    </form>
+    <script>
+        function enviar(){
+            let imsg = document.getElementById('imsg').value
+            let itxt = document.getElementById('itxt')
+            itxt.innerText = imsg
+            console.log('é p funcionar')
+        }
+    </script>
+</body>
+</html>

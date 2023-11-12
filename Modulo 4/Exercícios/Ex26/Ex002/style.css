@@ -1,0 +1,26 @@
+/* Declaração geral */
+body {
+    background-position: center bottom;
+}
+
+/*Declaração retrato */
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url(images/cev-portrait.jpg);
+        background-color: #233eff;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+}
+/*Declaração paisagem */
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url(images/cev-landscape.jpg);
+        background-color: #223eff;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+}

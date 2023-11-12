@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form3</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.py" method="get" autocomplete="on">
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" autocomplete="username" placeholder="Digite seu nome" required>
+        </div>
+        <div>
+            <label for="media">Media: </label>
+            <input type="number" name="media" id="media" min="0" max="10" placeholder="0 a 10">
+        </div>
+        <div>
+            <label for="plet">Período letivo: </label>
+            <input type="month" name="plet" id="plet" value="2023-10">
+        </div>
+        <div>
+            <label for="date">Dia da prova: </label>
+            <input type="date" name="date" id="date" value="2008-12-04">
+        </div>
+        <div>
+            <label for="time">Horario: </label>
+            <input type="time" name="time" id="time" value="12:00">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
