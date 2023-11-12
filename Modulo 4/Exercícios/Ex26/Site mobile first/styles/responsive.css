@@ -1,14 +1,28 @@
-@media screen and (min-width: 500px) {
-    img#phone {display: none;}
+@media screen and (max-width: 480px) {
+    img#phone {display: block;}
+}
+
+/** tablet **/
+@media screen and (min-width:481px) and (max-width: 768px) {
+    body {background-image: url(../images/back-tablet.jpg);}
     img#tablet {display: block;}
 }
 
+/** laptops and desktops **/
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    body {background-image: url(../images/back-pc.jpg);}
+    img#pc {display: block;}
+}
+
+/** televisões **/
+@media screen and (min-width: 1201px) {
+    body {background-image: url(../images/back-tv.jpg);}
+    img#tv {display: block;}
+}
+
 @media print {
-    img#phone {display: none;}
+    body {background-image: url(../images/back-print.jpg);}
     img#print {display: block;}
 }
 
-@media screen and (min-width: 800px) {
-    img#phone {display: none;}
-    img#pc {display: block;}
-}
