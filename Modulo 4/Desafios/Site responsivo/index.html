@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Site responsivo</title>
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <nav>
+        <img src="images/icons/menu_FILL0_wght400_GRAD0_opsz24.png" alt="menu" id="portaMenu" onclick="mostrar()">
+        <nav id="nav">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>
@@ -30,5 +31,16 @@
     <footer>
         <p>Site por <a href="https://github.com/matheus-barbiot" target="_blank">Matheus Barbiot</a></p>
     </footer>
+
+    <script>
+        function mostrar() {
+            let navg = document.getElementById('nav')
+            if (navg.style.display == 'none') {
+                navg.style.display = 'inline-block'
+            } else {
+                navg.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
